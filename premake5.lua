@@ -9,14 +9,14 @@ project "Glfw"
         "premake5.lua",
         
         "include/GLFW/**.h",
-		"src/glfw_config.h",
+        "src/glfw_config.h",
         
-		"src/init.c",
-		"src/context.c",
-		"src/monitor.c",
-		"src/input.c",
-		"src/window.c"
-		"src/vulkan.c",
+        "src/init.c",
+        "src/context.c",
+        "src/monitor.c",
+        "src/input.c",
+        "src/window.c",
+        "src/vulkan.c"
 	}
 
     filter "system:linux"
