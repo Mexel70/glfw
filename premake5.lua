@@ -19,7 +19,11 @@ project "glfw"
         "src/input.c",
         "src/window.c",
         "src/vulkan.c"
-	}
+    }
+    
+    defines {
+        "_GLFW_BUILD_DLL"
+    }
 
     filter "system:windows"
         systemversion "latest"
