@@ -22,7 +22,6 @@ project "glfw"
 
     filter "system:windows"
         systemversion "latest"
-        staticruntime "On"
 
         files {
             "src/win32_init.c",
@@ -44,8 +43,6 @@ project "glfw"
     
     filter "system:linux"
         systemversion "latest"
-        staticruntime "On"
-        pic "On"
 
         files {
             "src/x11_init.c",
@@ -65,17 +62,14 @@ project "glfw"
         }
 
 	filter "configurations:Debug"
-		defines "NEXUS_DEBUG"
 		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "NEXUS_RELEASE"
 		runtime "Release"
 		optimize "On"
 	
 	filter "configurations:Distribution"
-		defines "NEXUS_DISTRIBUTION"
 		runtime "Release"
 		optimize "On"
 		inlining "Auto"
