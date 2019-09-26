@@ -1,5 +1,5 @@
 project "glfw"
-	kind "StaticLib"
+	kind "SharedLib"
 	language "C"
 
 	targetname ("%{wks.name}-%{prj.name}")
