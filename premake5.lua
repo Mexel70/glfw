@@ -22,7 +22,6 @@ project "glfw"
 
     filter "system:windows"
         systemversion "latest"
-        staticruntime "on"
 
         files {
             "src/win32_init.c",
@@ -44,8 +43,6 @@ project "glfw"
     
     filter "system:linux"
         systemversion "latest"
-        staticruntime "on"
-        pic "on"
 
         files {
             "src/x11_init.c",
