@@ -1,6 +1,7 @@
 project "glfw"
 	kind "SharedLib"
-	language "C"
+    language "C"
+    staticruntime "off"
 
 	targetname ("%{wks.name}-%{prj.name}")
 	targetdir (BinaryOutputDirectory)
