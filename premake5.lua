@@ -87,7 +87,7 @@ project "glfw"
 
 
             "src/cocoa_init.m",
-            "src/egl_context.m",
+            "src/egl_context.c",
             "src/nsgl_context.m",
             "src/osmesa_context.c",
 
@@ -95,7 +95,7 @@ project "glfw"
             "src/cocoa_window.m",
             "src/cocoa_joystick.m",
             "src/posix_thread.c",
-            "src/cocoa_time.m"
+            "src/cocoa_time.c"
         }
 
         defines {
