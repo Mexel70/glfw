@@ -89,12 +89,12 @@ project "glfw"
             "src/cocoa_init.m",
             "src/egl_context.m",
             "src/nsgl_context.m",
-            "src/osmesa_context.m",
+            "src/osmesa_context.c",
 
             "src/cocoa_monitor.m",
             "src/cocoa_window.m",
             "src/cocoa_joystick.m",
-            "src/posix_thread.m",
+            "src/posix_thread.c",
             "src/cocoa_time.m"
         }
 
