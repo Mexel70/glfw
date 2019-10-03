@@ -89,7 +89,7 @@ project "glfw"
             "src/cocoa_init.m",
             "src/egl_context.m",
             "src/nsgl_context.m",
-            "src/osmesa_context.m"
+            "src/osmesa_context.m",
 
             "src/cocoa_monitor.m",
             "src/cocoa_window.m",
