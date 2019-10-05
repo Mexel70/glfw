@@ -49,7 +49,6 @@ project "glfw"
             "_CRT_SECURE_NO_WARNINGS"
         }
 
-    
     filter "system:linux"
         systemversion "latest"
 
@@ -72,6 +71,10 @@ project "glfw"
         defines {
             "_GLFW_X11"
         }
+
+        links {
+			"X11"
+		}
 
     filter "system:macosx"
         systemversion "latest"
@@ -103,7 +106,7 @@ project "glfw"
         }
 
         links {
-            "Cocoa"
+            "Cocoa.framework"
         }
 
 	filter "configurations:Debug"
