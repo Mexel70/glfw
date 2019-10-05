@@ -106,7 +106,10 @@ project "glfw"
         }
 
         links {
-            "Cocoa.framework"
+            "Cocoa.framework",
+            "OpenGL.framework",
+            "IOKit.framework",
+            "CoreVideo.framework"
         }
 
 	filter "configurations:Debug"
