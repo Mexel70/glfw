@@ -102,6 +102,10 @@ project "glfw"
             "_GLFW_COCOA"
         }
 
+        links {
+            "Cocoa"
+        }
+
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "On"
