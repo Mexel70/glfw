@@ -3,7 +3,9 @@ project "glfw"
     language "C"
     staticruntime "off"
 
-	targetname ("%{wks.name}-%{prj.name}")
+    targetname ("%{wks.name}-%{prj.name}")
+    targetprefix ("")
+
 	targetdir (BinaryOutputDirectory)
 	objdir (IntermediateOutputDirectory)
 
